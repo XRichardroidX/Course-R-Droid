@@ -2,18 +2,18 @@
   margin: 0;
   padding: 0;
 }
-
+  
 .body {
   overflow-x: hidden;
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(225, 209, 221, 0.73)), url('images/welcome-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+  
 .mobile-nav {
   display: none;
 }
-
+  
 .mobile-nav-active {
   display: flex;
   justify-content: space-between;
@@ -28,73 +28,74 @@
   width: 54vw;
   z-index: 2;
 }
-
+  
 @keyframes slide {
   from {
     margin: -0.5rem 0 0 90vw;
   }
+
   to {
     margin: -0.5rem 0 0 40vw;
   }
 }
-
+  
 .desktop-nav {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   background-color: rgba(201, 197, 197, 0.8);
 }
-
+  
 .mobile-nav ul li {
-    margin: 10%;
-    font-weight: 550;
-    font-family: "inter", sans-serif;
-    font-size: 30px;
-    text-decoration: none;
-  }
+  margin: 10%;
+  font-weight: 550;
+  font-family: "inter", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
   
 .mobile-nav ul {
   list-style: none;
 }
-
+  
 .desktop-nav ul {
   display: none;
 }
-
+  
 .mobile-nav ul li:first-child {
   margin-top: 1rem;
 }
-
+  
 a {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
   
 .mobile-nav a {
   text-decoration: none;
   color: red;
 }
-
+  
 @media screen and (min-width: 768px) {
   .desktop-nav {
     display: flex;
     justify-content: space-between;
     margin: 10px;
   }
-
+  
   .desktop-nav a {
     text-decoration: none;
-    color: red
+    color: red;
   }
-
+  
   .desktop-nav .mobile-menu-icon a {
     display: none;
   }
-
+  
   .desktop-nav ul {
     list-style: none;
     display: flex;
   }
-
+  
   .desktop-nav ul li {
     margin: 0 10% 0 0;
     font-weight: 550;
@@ -103,15 +104,15 @@ a {
     text-decoration: none;
   }
 }
-
-.welcome-page, 
+  
+.welcome-page,
 h1 {
   margin: 5% 12% 8% 2%;
   padding: 10px;
   width: 80%;
   height: 100%;
 }
-
+  
 .welcome-page > h1 {
   color: red;
   box-shadow: 0 4px 12px;
@@ -119,15 +120,15 @@ h1 {
   font-size: 40px;
   background-color: rgba(3, 3, 3, 0.5);
 }
-
+  
 .welcome-page h2 {
   font-family: "inter", sans-serif;
   width: 70%;
   margin: -1.5rem 0 10px 15px;
   font-size: 18px;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
-
+  
 .welcome-page h3 {
   font-family: "inter", sans-serif;
   width: 70%;
@@ -135,7 +136,7 @@ h1 {
   font-size: 12px;
   color: black;
 }
-
+  
 .button {
   padding: 10px;
   margin: 5% 0 12px 18px;
@@ -149,7 +150,7 @@ h1 {
   font-family: "inter", sans-serif;
   font-size: 20px;
 }
-
+  
 .courses {
   background-image: url(images/courses-background.svg);
   background-color: rgb(40, 29, 29, 0.7);
@@ -189,7 +190,7 @@ h1 {
     background-color: rgb(255, 0, 0, 0.5);
   }
 }
-
+  
 .courses h2 {
   color: white;
   font-weight: 550;
@@ -197,7 +198,7 @@ h1 {
   font-size: 30px;
   text-align: center;
 }
-
+  
 .courses .card {
   display: grid;
   align-items: end;
@@ -211,7 +212,7 @@ h1 {
   width: 17rem;
   height: 20rem;
 }
-
+  
 .courses .card h3 {
   margin-top: 15px;
   font-weight: 550;
@@ -219,7 +220,7 @@ h1 {
   font-size: 40px;
   color: white;
 }
-
+  
 .courses .card p {
   font-weight: 500;
   font-family: "inter", sans-serif;
@@ -230,7 +231,7 @@ h1 {
   padding: 10px;
   border-radius: 20%;
 }
-
+  
 .courses .card .button {
   background-color: transparent;
   border: 2px solid red;
