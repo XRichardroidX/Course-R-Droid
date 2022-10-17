@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  overflow-x: hidden;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(225, 209, 221, 0.73)), url('images/welcome-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav-active {
+  display: flex;
+  justify-content: space-between;
+  animation-name: slide;
+  animation-duration: 1s;
+  background-color: black;
+  margin: -0.5rem 0 0 40vw;
+  padding: 10px 2rem 75vh 10px;
+  box-shadow: 0 4px 12px;
+  border-radius: 0 0 0 10px;
+  position: absolute;
+  width: 54vw;
+  z-index: 2;
+}
+
+@keyframes slide {
+    from {
+        margin: -0.5rem 0 0 90vw;
+    }
+    to {
+        margin: -0.5rem 0 0 40vw;
+    }
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(201, 197, 197, 0.8);
+}
+
+.mobile-nav ul {
+  list-style: none;
+}
+
+.desktop-nav ul {
+  display: none;
+}
+
+.mobile-nav ul li:first-child {
+  margin-top: 1rem;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: red;
+}
+  
+.mobile-nav ul li {
+  margin: 10%;
+  font-weight: 550;
+  font-family: "inter", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .desktop-nav .mobile-menu-icon a {
+    display: none;
+  }
+
+  .desktop-nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: red
+  }
+    
+  .desktop-nav ul li {
+    margin: 0 10% 0 0;
+    font-weight: 550;
+    font-family: "inter", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+  }
+}
+
+.welcome-page,
+h1{
+  margin: 5% 12% 8% 2%;
+  padding: 10px;
+  width: 80%;
+  height: 100%;
+}
+
+.welcome-page > h1 {
+  color: red;
+  box-shadow: 0 4px 12px;
+  font-family: "inter", sans-serif;
+  font-size: 40px;
+  background-color: rgba(3, 3, 3, 0.5);
+}
+
+.welcome-page h2 {
+  font-family: "inter", sans-serif;
+  width: 70%;
+  margin: -1.5rem 0 10px 15px;
+  font-size: 18px;
+  color: rgba(0,0,0,0.8);
+}
+
+.welcome-page h3 {
+  font-family: "inter", sans-serif;
+  width: 70%;
+  margin: 1.5rem 0 10px 15px;
+  font-size: 12px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 10px;
+  margin: 5% 0 12px 18px;
+  width: 30%;
+  text-align: center;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-weight: 550;
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+}
+
+.courses {
+  background-image: url(images/courses-background.svg);
+  background-color: rgb(40, 29, 29, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  margin-top: 10;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .courses {
+    background-image: url(images/courses-background.svg);
+    background-color: rgb(40, 29, 29, 0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-top: 10;
+    width: 100%;
+  }
+
+  .courses hr {
+    display: none;
+  }
+
+  .courses h2 {
+    position: absolute;
+    color: white;
+    font-weight: 550;
+    font-family: "inter", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border: 4px solid rgb(255, 0, 0);
+    box-shadow: 0 4px 12px;
+    background-color: rgb(255, 0, 0, 0.5);
+  }
+}
+
+.courses h2 {
+  color: white;
+  font-weight: 550;
+  font-family: "inter", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.courses .card {
+  display: grid;
+  align-items: end;
+  padding: 10px 5px 5px 5px;
+  text-align: center;
+  box-shadow: 0 4px 12px;
+  background-color: transparent;
+  color: red;
+  border: 3px solid white;
+  margin: 10%;
+  width: 17rem;
+  height: 20rem;
+}
+
+.courses .card h3 {
+  margin-top: 15px;
+  font-weight: 550;
+  font-family: "inter", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.courses .card p {
+    font-weight: 500;
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    color: red;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.courses .card .button {
+  background-color: transparent;
+  border: 2px solid red;
+  padding: 2%;
+}
