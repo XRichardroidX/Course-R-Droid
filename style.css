@@ -30,12 +30,12 @@
 }
 
 @keyframes slide {
-    from {
-        margin: -0.5rem 0 0 90vw;
-    }
-    to {
-        margin: -0.5rem 0 0 40vw;
-    }
+  from {
+    margin: -0.5rem 0 0 90vw;
+  }
+  to {
+    margin: -0.5rem 0 0 40vw;
+  }
 }
 
 .desktop-nav {
@@ -45,6 +45,14 @@
   background-color: rgba(201, 197, 197, 0.8);
 }
 
+.mobile-nav ul li {
+    margin: 10%;
+    font-weight: 550;
+    font-family: "inter", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  
 .mobile-nav ul {
   list-style: none;
 }
@@ -57,17 +65,13 @@
   margin-top: 1rem;
 }
 
+a {
+    text-decoration: none;
+  }
+  
 .mobile-nav a {
   text-decoration: none;
   color: red;
-}
-  
-.mobile-nav ul li {
-  margin: 10%;
-  font-weight: 550;
-  font-family: "inter", sans-serif;
-  font-size: 30px;
-  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -75,6 +79,11 @@
     display: flex;
     justify-content: space-between;
     margin: 10px;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: red
   }
 
   .desktop-nav .mobile-menu-icon a {
@@ -86,11 +95,6 @@
     display: flex;
   }
 
-  .desktop-nav a {
-    text-decoration: none;
-    color: red
-  }
-    
   .desktop-nav ul li {
     margin: 0 10% 0 0;
     font-weight: 550;
@@ -100,8 +104,8 @@
   }
 }
 
-.welcome-page,
-h1{
+.welcome-page, 
+h1 {
   margin: 5% 12% 8% 2%;
   padding: 10px;
   width: 80%;
@@ -130,10 +134,6 @@ h1{
   margin: 1.5rem 0 10px 15px;
   font-size: 12px;
   color: black;
-}
-
-a {
-  text-decoration: none;
 }
 
 .button {
@@ -221,14 +221,14 @@ a {
 }
 
 .courses .card p {
-    font-weight: 500;
-    font-family: "inter", sans-serif;
-    font-size: 20px;
-    margin-top: 15px;
-    color: red;
-    background-color: rgb(0, 0, 0, 0.3);
-    padding: 10px;
-    border-radius: 20%;
+  font-weight: 500;
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  color: red;
+  background-color: rgb(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 20%;
 }
 
 .courses .card .button {
