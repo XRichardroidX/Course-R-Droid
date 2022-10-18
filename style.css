@@ -10,6 +10,20 @@
   background-size: cover;
 }
 
+.body .socials {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: rgb(41, 37, 37);
+}
+
+.body .socials li,
+a {
+  list-style-type: none;
+  margin: 5px;
+  color: white;
+}
+
 .mobile-nav {
   display: none;
 }
@@ -153,29 +167,24 @@ h1 {
 
 .courses {
   background-image: url(images/courses-background.svg);
-  background-color: rgb(40, 29, 29, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   justify-content: center;
-  margin-top: 10;
+  margin-top: 1px;
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .courses {
     background-image: url(images/courses-background.svg);
-    background-color: rgb(40, 29, 29, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    margin-top: 10;
     width: 100%;
-  }
-
-  .courses hr {
-    display: none;
   }
 
   .courses h2 {
@@ -183,11 +192,38 @@ h1 {
     color: white;
     font-weight: 550;
     font-family: "inter", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     border: 4px solid rgb(255, 0, 0);
     box-shadow: 0 4px 12px;
     background-color: rgb(255, 0, 0, 0.5);
+  }
+  
+  .tutors {
+    display: grid;
+    grid-template-columns: 20px 20px 20px;
+    justify-content: center;
+    gap: 30%;
+    margin-left: -10%;
+    font-weight: 500;
+    font-family: "inter", sans-serif;
+  }
+
+  .tutors .professor .info {
+    padding: 0 0 10% 10%;
+    float: left;
+  }
+
+  .tutors .professor .info .name {
+    font-weight: 550;
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    width: 10rem;
+  }
+
+  .tutors .professor .info .school {
+    color: red;
+    width: 10rem;
   }
 }
 
@@ -200,17 +236,15 @@ h1 {
 }
 
 .courses .card {
-  display: grid;
-  align-items: end;
   padding: 10px 5px 5px 5px;
   text-align: center;
   box-shadow: 0 4px 12px;
   background-color: transparent;
   color: red;
-  border: 3px solid white;
-  margin: 10%;
-  width: 17rem;
-  height: 20rem;
+  border: 2px solid white;
+  margin: 5%;
+  width: 20rem;
+  height: 25rem;
 }
 
 .courses .card h3 {
@@ -236,4 +270,193 @@ h1 {
   background-color: transparent;
   border: 2px solid red;
   padding: 2%;
+}
+
+.senior-tutors {
+  font-weight: 550;
+  font-family: "inter", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 5%;
+}
+
+.tutors {
+  font-weight: 500;
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+
+.tutors .professor {
+  display: flex;
+  margin: 10%;
+}
+
+.tutors .professor .info {
+  padding: 0 10% 10% 10%;
+  float: left;
+}
+
+.tutors .professor .info .name {
+  font-weight: 550;
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+}
+
+.tutors .professor .info .school {
+  color: red;
+}
+
+.partners {
+  margin-top: 10%;
+  background-color: black;
+  text-align: center;
+}
+
+.partners h4 {
+  padding-top: 5%;
+  font-weight: 550;
+  color: white;
+  font-family: "inter", sans-serif;
+  font-size: 30px;
+}
+
+.partners hr{
+  margin-bottom: 20px;
+}
+
+.partners img {
+  width: 70px;
+}
+
+.partners ul {
+  display: flex;
+  justify-content: center;
+}
+
+.partners ul li {
+  margin: 10px;
+}
+
+.welcome-about-us {
+  animation-name: about;
+  animation-duration: 1.5s;
+  text-align: center;
+  margin: 10%;
+  font-weight: 550;
+  color: white;
+  font-family: "inter", sans-serif;
+  font-size: 50px;
+}
+
+@keyframes about {
+  from {
+    margin: 100%;
+  }
+
+  to {
+    margin: 10%;
+  }
+}
+
+.information {
+  animation-name: about;
+  animation-duration: 1.5s;
+  text-align: center;
+  margin-top: 15%;
+  margin: 10%;
+  border-radius: 2px;
+  font-weight: 550;
+  color: rgb(210, 20, 20);
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 1.2s;
+}
+
+.information:hover {
+  background-color: white;
+  padding: 4px;
+  color: red;
+}
+
+.contact-p {
+  margin-top: -8%;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.about-us-logo {
+  display: flex;
+  box-shadow: 0 4px 12px;
+  margin: 20%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px){
+  .about-us-logo {
+    display: flex;
+    box-shadow: 0 4px 12px;
+    margin: 5% 20% 5% 20%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+.about-us-logo img {
+  width: 120px;
+}
+
+.about-us-logo p {
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  margin: 2px;
+}
+
+h6 {
+  font-weight: 550;
+  color: red;
+  font-family: "inter", sans-serif;
+  font-size: 40px;
+  box-shadow: 0 2px 7px;
+  background-color: rgb(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.graduates {
+  display: flex;
+  justify-content: space-around;
+}
+
+.graduates .graduate-1 {
+  background-color: aliceblue;
+}
+
+.graduates .graduate-2 {
+  background-color: aliceblue;
+}
+
+.graduate-1 h5 {
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.graduate-2 h5 {
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.graduates .graduate-1 img,
+.graduate-2 img {
+  width: 300px;
 }
