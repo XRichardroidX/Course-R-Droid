@@ -17,6 +17,18 @@
   background-color: rgb(41, 37, 37);
 }
 
+.mobile-nav ul li {
+  margin: 10%;
+  font-weight: 550;
+  font-family: "inter", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.partners ul li {
+  margin: 10px;
+}
+
 .body .socials li,
 a {
   list-style-type: none;
@@ -58,14 +70,6 @@ a {
   justify-content: space-between;
   padding: 10px;
   background-color: rgba(201, 197, 197, 0.8);
-}
-
-.mobile-nav ul li {
-  margin: 10%;
-  font-weight: 550;
-  font-family: "inter", sans-serif;
-  font-size: 30px;
-  text-decoration: none;
 }
 
 .mobile-nav ul {
@@ -198,7 +202,7 @@ h1 {
     box-shadow: 0 4px 12px;
     background-color: rgb(255, 0, 0, 0.5);
   }
-  
+
   .tutors {
     display: grid;
     grid-template-columns: 20px 20px 20px;
@@ -253,6 +257,14 @@ h1 {
   font-family: "inter", sans-serif;
   font-size: 40px;
   color: white;
+}
+
+.about-us-logo p {
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  margin: 2px;
 }
 
 .courses .card p {
@@ -321,7 +333,7 @@ h1 {
   font-size: 30px;
 }
 
-.partners hr{
+.partners hr {
   margin-bottom: 20px;
 }
 
@@ -332,10 +344,6 @@ h1 {
 .partners ul {
   display: flex;
   justify-content: center;
-}
-
-.partners ul li {
-  margin: 10px;
 }
 
 .welcome-about-us {
@@ -363,8 +371,8 @@ h1 {
   animation-name: about;
   animation-duration: 1.5s;
   text-align: center;
-  margin-top: 15%;
   margin: 10%;
+  margin-top: 15%;
   border-radius: 2px;
   font-weight: 550;
   color: rgb(210, 20, 20);
@@ -398,7 +406,7 @@ h1 {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .about-us-logo {
     display: flex;
     box-shadow: 0 4px 12px;
@@ -410,14 +418,6 @@ h1 {
 
 .about-us-logo img {
   width: 120px;
-}
-
-.about-us-logo p {
-  font-weight: 500;
-  color: rgb(0, 0, 0);
-  font-family: "inter", sans-serif;
-  font-size: 20px;
-  margin: 2px;
 }
 
 h6 {
@@ -436,11 +436,11 @@ h6 {
   justify-content: space-around;
 }
 
-.graduates .graduate-1 {
+.graduates .graduate-2 {
   background-color: aliceblue;
 }
 
-.graduates .graduate-2 {
+.graduates .graduate-1 {
   background-color: aliceblue;
 }
 
@@ -456,7 +456,10 @@ h6 {
   text-align: center;
 }
 
-.graduates .graduate-1 img,
-.graduate-2 img {
+.graduates .graduate-1 img {
+  width: 300px;
+}
+
+.graduates .graduate-2 img {
   width: 300px;
 }
