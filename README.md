@@ -1,16 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Hello Microverse
-> This is remote pair programming Microverse portfolio website which was built using HTML and Bootstrap.
+> This is my First capstone project
 
 
 ## Built With
  
-  HTML 5 & Bootstrap 5
+  HTML 5 & CSS 3 and JavaScript
   
- <!--
- [Live Demo Link](https://xrichardroidx.github.io/My-Microverse-Portfolio/)
- -->
+ 
+ [Click here to view Live Demo](https://xrichardroidx.github.io/Course-R-Droid/)
+ 
 
 <!-- ## Getting Started
 
@@ -46,18 +46,17 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/XRichardroidX/Bootstrap-Desktop-Prototype/issues).
+Feel free to check the [issues page](https://github.com/XRichardroidX/Course-R-Droid/issues).
 
- ## Show your support
+ ## Inspiration ⭐️⭐️⭐️
+Credits to [Cindy Shin in Behance](https://www.behance.net/adagio07) for a beatiful User interface design
+
+Please you can assist [Cindy Shin](https://creativecommons.org/licenses/by-nc/4.0/) here with a kind donation
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
+https://www.behance.net/adagio07
 
 ## 📝 License
 This project is [MIT](MIT.md) licensed.
