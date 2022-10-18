@@ -11,17 +11,22 @@
 }
 
 .body .socials {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  background-color: rgb(41, 37, 37);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .body .socials {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: rgb(41, 37, 37);
+  }
 }
 
 .mobile-nav ul li {
   margin: 10%;
-  font-weight: 550;
-  font-family: "inter", sans-serif;
-  font-size: 30px;
+  font-family: 'Lato', serif;
+  font-size: 28px;
   text-decoration: none;
 }
 
@@ -44,10 +49,10 @@ a {
   display: flex;
   justify-content: space-between;
   animation-name: slide;
-  animation-duration: 1s;
-  background-color: black;
+  animation-duration: 0.5s;
+  background-color: rgb(194, 183, 183);
   margin: -0.5rem 0 0 40vw;
-  padding: 10px 2rem 75vh 10px;
+  padding: 10px 1.5rem 75vh 10px;
   box-shadow: 0 4px 12px;
   border-radius: 0 0 0 10px;
   position: absolute;
@@ -74,14 +79,15 @@ a {
 
 .mobile-nav ul {
   list-style: none;
+  width: 230px;
 }
 
 .desktop-nav ul {
   display: none;
 }
 
-.mobile-nav ul li:first-child {
-  margin-top: 1rem;
+.mobile-nav ul li:last-child {
+  border: 2px solid #ec5242;
 }
 
 a {
@@ -90,19 +96,44 @@ a {
 
 .mobile-nav a {
   text-decoration: none;
-  color: red;
+  color: black;
+  transition: 0.5s;
+}
+
+.mobile-nav a:hover {
+  color: #ec5242;
+}
+
+.desktop-nav .logo-img {
+  display: none;
+}
+
+.desktop-nav .mobile-menu-icon .clear {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .desktop-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 10px;
   }
 
   .desktop-nav a {
     text-decoration: none;
-    color: red;
+    color: black;
+    transition: 0.5s;
+  }
+
+  .desktop-nav a:hover {
+    color: #ec5242;
+  }
+
+  .desktop-nav .logo-img {
+    display: block;
+    margin-right: 35vw;
+    margin-left: 6%;
   }
 
   .desktop-nav .mobile-menu-icon a {
@@ -115,11 +146,14 @@ a {
   }
 
   .desktop-nav ul li {
-    margin: 0 10% 0 0;
-    font-weight: 550;
-    font-family: "inter", sans-serif;
-    font-size: 30px;
+    margin: 2px;
+    font-family: 'lato', sans-serif;
+    font-size: 20px;
     text-decoration: none;
+  }
+
+  .desktop-nav ul li:last-child {
+    border: 2px solid #ec5242;
   }
 }
 
@@ -128,11 +162,10 @@ h1 {
   margin: 5% 12% 8% 2%;
   padding: 10px;
   width: 80%;
-  height: 100%;
 }
 
 .welcome-page > h1 {
-  color: red;
+  color: #ec5242;
   box-shadow: 0 4px 12px;
   font-family: "inter", sans-serif;
   font-size: 40px;
@@ -161,7 +194,7 @@ h1 {
   width: 30%;
   text-align: center;
   height: 30px;
-  background-color: red;
+  background-color: #ec5242;
   color: white;
   border-radius: 10px;
   font-weight: 550;
@@ -171,7 +204,7 @@ h1 {
 
 .courses {
   background-image: url(images/courses-background.svg);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -183,9 +216,10 @@ h1 {
 @media screen and (min-width: 768px) {
   .courses {
     background-image: url(images/courses-background.svg);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.85);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 80px 0 110px 0;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -195,22 +229,23 @@ h1 {
     position: absolute;
     color: white;
     font-weight: 550;
-    font-family: "inter", sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 25px;
     text-align: center;
-    border: 4px solid rgb(255, 0, 0);
+    border: 4px solid #ec5242;
     box-shadow: 0 4px 12px;
     background-color: rgb(255, 0, 0, 0.5);
   }
 
   .tutors {
     display: grid;
-    grid-template-columns: 20px 20px 20px;
-    justify-content: center;
-    gap: 30%;
-    margin-left: -10%;
+    grid-template-columns: 20px 20px;
+    justify-content: space-evenly;
+    gap: 10%;
+    margin-left: -8%;
+    margin-bottom: 200px;
     font-weight: 500;
-    font-family: "inter", sans-serif;
+    font-family: "lato", sans-serif;
   }
 
   .tutors .professor .info {
@@ -226,7 +261,7 @@ h1 {
   }
 
   .tutors .professor .info .school {
-    color: red;
+    color: #ec5242;
     width: 10rem;
   }
 }
@@ -242,13 +277,13 @@ h1 {
 .courses .card {
   padding: 10px 5px 5px 5px;
   text-align: center;
-  box-shadow: 0 4px 12px;
+  box-shadow: 0 1px 2px;
   background-color: transparent;
-  color: red;
+  color: #ec5242;
   border: 2px solid white;
-  margin: 5%;
-  width: 20rem;
-  height: 25rem;
+  margin: 1%;
+  width: 15rem;
+  height: 18rem;
 }
 
 .courses .card h3 {
@@ -260,11 +295,19 @@ h1 {
 }
 
 .about-us-logo p {
-  font-weight: 500;
+  box-shadow: 0 4px 12px;
+  margin: 2%;
+  padding: 10px;
+  border-radius: 5px;
   color: rgb(0, 0, 0);
   font-family: "inter", sans-serif;
   font-size: 20px;
-  margin: 2px;
+}
+
+footer .footer p {
+  font-family: "lato", sans-serif;
+  font-size: 10px;
+  padding: 0 10% 0 5%;
 }
 
 .courses .card p {
@@ -272,7 +315,7 @@ h1 {
   font-family: "inter", sans-serif;
   font-size: 20px;
   margin-top: 15px;
-  color: red;
+  color: #ec5242;
   background-color: rgb(0, 0, 0, 0.3);
   padding: 10px;
   border-radius: 20%;
@@ -280,13 +323,13 @@ h1 {
 
 .courses .card .button {
   background-color: transparent;
-  border: 2px solid red;
+  border: 2px solid #ec5242;
   padding: 2%;
 }
 
 .senior-tutors {
   font-weight: 550;
-  font-family: "inter", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 30px;
   text-align: center;
   margin: 5%;
@@ -294,7 +337,7 @@ h1 {
 
 .tutors {
   font-weight: 500;
-  font-family: "inter", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 20px;
   width: 100%;
 }
@@ -316,7 +359,7 @@ h1 {
 }
 
 .tutors .professor .info .school {
-  color: red;
+  color: #ec5242;
 }
 
 .partners {
@@ -329,12 +372,16 @@ h1 {
   padding-top: 5%;
   font-weight: 550;
   color: white;
-  font-family: "inter", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 30px;
 }
 
 .partners hr {
   margin-bottom: 20px;
+}
+
+footer img {
+  height: 80px;
 }
 
 .partners img {
@@ -400,15 +447,16 @@ h1 {
 
 .about-us-logo {
   display: flex;
-  box-shadow: 0 4px 12px;
-  margin: 20%;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
-  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
   .about-us-logo {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: 0 4px 12px;
     margin: 5% 20% 5% 20%;
     padding: 10px;
@@ -432,34 +480,86 @@ h6 {
 }
 
 .graduates {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .graduates {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .graduates .graduate-2 {
-  background-color: aliceblue;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(229, 65, 32),
+      rgba(209, 113, 24, 0.73)
+    ),
+    url('images/graduate-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15%;
+  margin: 15px;
 }
 
 .graduates .graduate-1 {
-  background-color: aliceblue;
+  background-image: linear-gradient(to bottom, rgb(229, 65, 32), rgba(209, 113, 24, 0.73)), url('images/graduate-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15%;
+  margin: 15px;
 }
 
 .graduate-1 h5 {
   font-family: "inter", sans-serif;
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 .graduate-2 h5 {
   font-family: "inter", sans-serif;
   font-size: 20px;
+  color: white;
   text-align: center;
 }
 
-.graduates .graduate-1 img {
-  width: 300px;
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% 1% 2% 1%;
 }
 
-.graduates .graduate-2 img {
-  width: 300px;
+footer .footer h5 {
+  margin: 0 0 0 5%;
+  color: #ec5242;
+  font-family: "lato", sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 15% 2% 15%;
+  }
+
+  footer img {
+    height: 100px;
+  }
+
+  footer .footer h5 {
+    margin: 0 0 0 10%;
+    color: #ec5242;
+    font-family: "lato", sans-serif;
+    font-size: 30px;
+  }
+
+  footer .footer p {
+    font-family: "lato", sans-serif;
+    font-size: 10px;
+    padding: 0 10% 0 10%;
+  }
 }

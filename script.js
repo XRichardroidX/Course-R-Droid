@@ -1,3 +1,4 @@
+const menu = document.getElementById("my-don't-clear");
 const mobileMenu = document.querySelector('.mobile-menu-icon');
 const mobileNav = document.querySelector('.mobile-nav');
 const courses = document.querySelector('.courses');
@@ -6,8 +7,10 @@ const tutors = document.querySelector('.tutors');
   mobileMenu.addEventListener('click',()=>{
     if(mobileNav.className === 'mobile-nav'){
         mobileNav.classList.add('mobile-nav-active');
+        menu.className = 'clear';
     }else{
         mobileNav.classList.add('mobile-nav');
+        menu.className = "don't-clear";
     }
     });
 
@@ -23,6 +26,14 @@ const object = [
   {
     title: 'CS50X',
     description: 'This is a good course which is currently used in Havard"s CS for beginners.',
+  },
+  {
+    title: 'CS Maths',
+    description: 'This is a good course related to algera and abstract logic for CS majors',
+  },
+  {
+    title: 'CS Physics',
+    description: 'I think you should consider subscribing bro or sis...!',
   }
 ];
 
